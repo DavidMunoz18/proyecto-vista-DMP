@@ -17,7 +17,7 @@
 
         <button type="submit">Iniciar sesión</button>
     </form>
-
+	
     <script>
     $('#loginForm').submit(function(event) {
         event.preventDefault(); // Evita el envío tradicional del formulario
@@ -40,9 +40,9 @@
             success: function(response) {
                 // Aquí verificamos el valor de la respuesta
                 if (response === 'admin') {
-                    window.location.href = '/admin.html'; // Redirige al admin
+                    window.location.href = '/vistaMotos/admin.html'; // Redirige al admin
                 } else if (response === 'usuario') {
-                    window.location.href = '/usuario.html'; // Redirige al usuario
+                    window.location.href = '/vistaMotos/usuario.html'; // Redirige al usuario
                 } else {
                     alert('Usuario o contraseña incorrectos.');
                 }
